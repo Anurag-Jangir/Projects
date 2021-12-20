@@ -1,0 +1,73 @@
+:root {
+    --color:rgb(255, 255, 255);
+}
+#digitalClock {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 15px 30px;
+    color: var(--color);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    font-family: 'Baloo Thambi 2';
+}
+#digitalClock:hover {
+    color: #091921;
+    background: var(--color);
+    box-shadow: 0px 0px 10px var(--color), 0px 0px 40px var(--color), 0px 0px 80px var(--color);
+    transition-delay: 1s;
+}
+#digitalClock span {
+    position: absolute;
+}
+#digitalClock span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#ff0055);
+}
+#digitalClock:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+#digitalClock span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#ff0055);
+}
+#digitalClock:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#digitalClock span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#ff0055);
+}
+#digitalClock:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#digitalClock span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#ff0055);
+}
+#digitalClock:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
